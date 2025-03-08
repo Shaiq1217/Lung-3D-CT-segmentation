@@ -6,7 +6,7 @@ This is a PyTorch implementation of the U-Net model and SWIN Trasnformer for lun
 - [SWIN Transformer: Hierarchical Vision Transformer using Shifted Windows](https://arxiv.org/abs/2103.14030)
 
 ## Dataset
-The LIDC-IDRI dataset is used for training and validation. The dataset can be downloaded from the [LIDC-IDRI website](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI). The dataset contains 1018 CT scans with annotations of lung nodules. The dataset is divided into 4 subsets: training, validation, test, and annotations. The training and validation subsets are used for training and validation, respectively. The test subset is used for testing the model. The annotations subset contains the annotations of the lung nodules.
+The LIDC-IDRI dataset is used for training and validation. The dataset can be downloaded from the [LIDC-IDRI website]([https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=1966254)). The dataset contains 1018 CT scans with annotations of lung nodules. The dataset is divided into 4 subsets: training, validation, test, and annotations. The training and validation subsets are used for training and validation, respectively. The test subset is used for testing the model. The annotations subset contains the annotations of the lung nodules.
 
 <p align="center">
   <img src="ground_truths.png" alt="Ground Truths">
