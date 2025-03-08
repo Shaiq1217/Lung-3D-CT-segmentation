@@ -7,7 +7,9 @@ This is a PyTorch implementation of the U-Net model and SWIN Trasnformer for lun
 
 ## Dataset
 The LIDC-IDRI dataset is used for training and validation. The dataset can be downloaded from the [LIDC-IDRI website](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI). The dataset contains 1018 CT scans with annotations of lung nodules. The dataset is divided into 4 subsets: training, validation, test, and annotations. The training and validation subsets are used for training and validation, respectively. The test subset is used for testing the model. The annotations subset contains the annotations of the lung nodules.
-<image src="grounds truth.png" />
+
+![Ground Truths](<ground truths.png>)
+
 ## Data used
 The data used for training and validation is the LIDC-IDRI dataset. The dataset is divided into 3 subsets: training, validation, test. The training and validation subsets are used for training and validation, respectively. The test subset is used for testing the model. 
 
@@ -25,10 +27,14 @@ The model is trained using the following hyperparameters:
 
 | Epoch | Loss   | Val Loss  | Dice WT  | Dice TC  | Dice ET | Mean Dice |
 |-------|--------|----------|----------|----------|----------|------------|
+| ...   | ...    | ...      | ...      | ...      | ...      | ...        |
 | 23    | 0.0434 | 1.5953   | 0.3423   | 0.4483   | 0.3390   | 0.4458     |
 | 24    | 0.0426 | 1.7978   | 0.3460   | 0.4520   | 0.3547   | 0.4622     |
 | 25    | 0.0419 | 0.9788   | 0.3477   | 0.4545   | 0.3723   | 0.4776     |
 | 26    | 0.0413 | 0.5277   | 0.3495   | 0.4568   | 0.3385   | 0.4428     |
+
+Example segmentation inference results of the U-Net model:
+![Inference Result](Segemntation_Results.jpg)
 
 ## Training for SWIN Transformer model
 TIMM is used to load the SWIN Transformer model. The model is trained using the following hyperparameters:
