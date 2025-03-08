@@ -7,9 +7,9 @@ This is a PyTorch implementation of the U-Net model and SWIN Trasnformer for lun
 
 ## Dataset
 The LIDC-IDRI dataset is used for training and validation. The dataset can be downloaded from the [LIDC-IDRI website](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI). The dataset contains 1018 CT scans with annotations of lung nodules. The dataset is divided into 4 subsets: training, validation, test, and annotations. The training and validation subsets are used for training and validation, respectively. The test subset is used for testing the model. The annotations subset contains the annotations of the lung nodules.
-
+<div align="center">
 ![Ground Truths](<ground truths.png>)
-
+</div>
 ## Data used
 The data used for training and validation is the LIDC-IDRI dataset. The dataset is divided into 3 subsets: training, validation, test. The training and validation subsets are used for training and validation, respectively. The test subset is used for testing the model. 
 
