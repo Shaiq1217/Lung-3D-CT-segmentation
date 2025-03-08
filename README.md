@@ -6,18 +6,14 @@ This is a PyTorch implementation of the U-Net model and SWIN Trasnformer for lun
 - [SWIN Transformer: Hierarchical Vision Transformer using Shifted Windows](https://arxiv.org/abs/2103.14030)
 
 ## Dataset
-The LIDC-IDRI dataset is used for training and validation. The dataset can be downloaded from the [LIDC-IDRI website]([https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=1966254)). The dataset contains 1018 CT scans with annotations of lung nodules. The dataset is divided into 4 subsets: training, validation, test, and annotations. The training and validation subsets are used for training and validation, respectively. The test subset is used for testing the model. The annotations subset contains the annotations of the lung nodules.
+The LIDC-IDRI dataset is used for training and validation. The dataset can be downloaded from the [LIDC-IDRI website]([https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=1966254)). The dataset contains 1018 CT scans with annotations of lung nodules. The dataset is divided into 3 subsets: training, validation and test. The test subset is used to run inference.
 
 <p align="center">
   <img src="ground_truths.png" alt="Ground Truths">
 </p>
 
-
-## Data used
-The data used for training and validation is the LIDC-IDRI dataset. The dataset is divided into 3 subsets: training, validation, test. The training and validation subsets are used for training and validation, respectively. The test subset is used for testing the model. 
-
 ## Preprocessing
-The CT images are preprocessed by resizing the images to 256x256 pixels and normalizing the pixel values to the range [0, 1]. The annotations are preprocessed by resizing the annotations to 256x256 pixels and converting the annotations to binary masks. Augmentation techniques such as rotation, flipping, and scaling are used to increase the size of the training dataset.
+The CT images are preprocessed by resizing the images to 256x256 pixels and normalizing the pixel values to the range [0, 1]. Augmentation techniques such as rotation, flipping, and scaling are used to increase the size of the training dataset.
 
 ## Training for UNET model
 
